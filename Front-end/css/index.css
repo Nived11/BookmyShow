@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    background-color: rgb(245, 245, 245);
+}
+.main{
+
+}
+.navbar{
+    height: 64px;
+    width: 100%;
+    background-color: white;
+   display: flex;
+   justify-content: center;
+}
+.nav-lft{
+    height: 100%;
+    width: 60%;
+    /* background-color: aqua; */
+    display: flex;
+}
+
+.logo-div{
+    height: 100%;
+    width:15%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* background-color: bisque; */
+}
+.search-div{
+    height: 100%;
+    width: 85%;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+}
+img{
+    height: 33px;
+}
+input{
+    height: 32px;
+    width: 540px;
+    background-image: url("../assets/search .png");
+    box-sizing: border-box;
+    background-position: 8px ; 
+    background-repeat: no-repeat;
+    background-size: 16px;
+    border: 1px solid rgba(107, 107, 107, 0.193);
+    padding-left: 40px;
+    font-size: 14px;
+    
+}
+input::placeholder{
+    color: rgb(149, 147, 147);
+}
+.nav-rgt{
+    height: 100%;
+    width: 20%;
+    /* background-color: blue; */
+    display: flex;
+}
+.place-div{
+width: 50%;
+height: 100%;
+/* background-color: brown; */
+display: flex;
+align-items: center;
+justify-content: end;
+}
+
+.place{
+    width: 45%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    /* background-color: antiquewhite; */
+}
+.arrowicon{
+    height: 26px;
+    /* background-color: aqua; */
+}
+
+p{
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.signin-div{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(72, 48, 48); */
+    display: flex;
+}
+.signin{
+width: 70%;
+/* background-color: aquamarine; */
+display: flex;
+align-items: center;
+justify-content: end;
+}
+
+button{
+    height: 25px;
+    width: 67px;
+    font-size: 12px;
+    background-color: rgb(248, 68, 100);
+    color: white;
+    border: 1px solid rgb(248, 68, 100);
+    outline: none;
+    text-align: center;
+    display: block;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.more{
+    width: 30%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
+.moreicon{
+    height: 25px;
+}
