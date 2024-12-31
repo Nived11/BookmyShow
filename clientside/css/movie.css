@@ -1,0 +1,342 @@
+body{
+    margin: 0;
+    background-color: rgb(246, 246, 246);
+}
+.main{
+
+}
+.navbar{
+    height: 64px;
+    width: 100%;
+    background-color: white;
+   display: flex;
+   justify-content: center;
+}
+.nav-lft{
+    height: 100%;
+    width: 60%;
+    /* background-color: aqua; */
+    display: flex;
+}
+
+.logo-div{
+    height: 100%;
+    width:15%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* background-color: bisque; */
+}
+.search-div{
+    height: 100%;
+    width: 85%;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+}
+img{
+    height: 33px;
+}
+input{
+    height: 32px;
+    width: 540px;
+    background-image: url("../assets/search .png");
+    box-sizing: border-box;
+    background-position: 8px ; 
+    background-repeat: no-repeat;
+    background-size: 16px;
+    border: 1px solid rgba(107, 107, 107, 0.193);
+    padding-left: 40px;
+    font-size: 14px;
+    
+}
+input::placeholder{
+    color: rgb(149, 147, 147);
+}
+.nav-rgt{
+    height: 100%;
+    width: 20%;
+    /* background-color: blue; */
+    display: flex;
+}
+.place-div{
+width: 50%;
+height: 100%;
+/* background-color: brown; */
+display: flex;
+align-items: center;
+justify-content: end;
+}
+
+.place{
+    width: 45%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    /* background-color: antiquewhite; */
+}
+.arrowicon{
+    height: 26px;
+    /* background-color: aqua; */
+}
+
+p{
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.signin-div{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(72, 48, 48); */
+    display: flex;
+}
+.signin{
+width: 70%;
+/* background-color: aquamarine; */
+display: flex;
+align-items: center;
+justify-content: end;
+}
+
+button{
+    height: 25px;
+    width: 67px;
+    font-size: 12px;
+    background-color: rgb(248, 68, 100);
+    color: white;
+    border: 1px solid rgb(248, 68, 100);
+    outline: none;
+    text-align: center;
+    display: block;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.more{
+    width: 30%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
+.moreicon{
+    height: 25px;
+}
+.secnav{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center; 
+    background-color: #F5F5F5;
+    border-bottom: 1px solid rgba(123, 123, 123, 0.173);
+}
+.secnav-lft{
+    height: 100%;
+    width:60% ;
+    /* background-color: rgb(73, 100, 91); */
+    display: flex;
+
+}
+.seclft-content{
+    margin: 0;
+    display: flex;
+    /* background-color: aqua; */
+    height: 100%;
+    width: 370px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 0px;
+}
+.seclft-content li{
+    list-style: none;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 400;
+    color:  rgb(51, 51, 51);
+    text-decoration: none;
+    font-family: roboto,sans-serif;
+}
+.secnav-rgt{
+    height: 100%;
+    width: 20%;
+    /* background-color: blue; */
+}
+.secrgt-content{
+    margin: 0;
+    display: flex;
+    /* background-color: aqua; */
+    height: 100%;
+    width: 310px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 0px;
+}
+.secrgt-content li{
+    list-style: none;
+
+    font-family: roboto,sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+}
+
+.moviecontainer{
+    width: 100%;
+    height:480px ;
+    background-color: #1A1A1A;
+  
+    
+
+}
+.moviediv{
+    height: 100%;
+    width:95%;
+    margin: auto;
+   display: flex;
+   align-items: center;
+   
+   /* border: 1px solid white; */
+
+
+    
+}
+.movie-det-div{
+    height: 90%;
+    width: 100%;
+    margin-left: 100px;
+    /* background-color: #b46262; */
+    /* border: 1px solid rgb(222, 3, 3); */
+    display: flex;
+    
+}
+.card{
+    height: 100%;
+    width: 20%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+.img{
+width: 100%;
+height: 90%;
+
+}
+.img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+.h4{
+    height: 10%;
+    width: 100%;
+    /* background-color: rgb(0, 0, 0); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+.details-div{
+    height: 100%;
+    width: 60%;
+    /* border: 1px solid rgb(0, 255, 17); */
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+h1{
+    margin-top: 50px;
+    /* background-color: aliceblue; */
+    color: #F5F5F5;
+    font-family: sans-serif;
+    width: 400px;
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+.rating-div{
+    margin-top: -20px;
+    height: 60px;
+    width: 430px;
+    background-color: #343434;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+   
+}
+.rating-div img{
+height: 25px;
+width: 25px;
+margin-left: 30px;
+}
+.rating-div h4{
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 10px;
+    word-spacing: 5px;
+
+}
+.ratenow{
+    height: 40px;
+    width: 90px;
+    margin-left: 80px;
+    border-radius: 10px;
+    background-color: white;
+    border: 0;
+    color: black;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+.screen-div{
+    margin-top: 10px;
+    height: 30px;
+    width:fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(224, 224, 224);
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    font-family: sans-serif;
+
+}
+.language-div{
+    height: 30px;
+    width:fit-content;
+    background-color:  rgb(224, 224, 224);
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.duration{
+    height: 50px;
+    width: 400px;
+    /* background-color:  rgb(146, 168, 168); */
+    border-radius: 8px;
+    color: white;
+    font-family: sans-serif;
+}
+.bookticket{
+    height: 50px;
+    width: 220px;
+    border-radius: 8px;
+    font-size: 16px;
+}
