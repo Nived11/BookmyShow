@@ -38,9 +38,6 @@ await userSchema.create({username,email,password:hpassword}).then(()=>{
 
 
 export async function loginUser(req,res) {
-    if (!req.body) {
-        return res.status(400).send({msg: "Request body is missing"});
-    }
     const {email,password}=req.body;
     if(!(email&&password))
         return res.status(404).send({msg:"Fields are empty"});
@@ -62,7 +59,7 @@ export async function Home(req,res){
         console.log(req.user);
         const _id=req.user.userID;
         const user=await userSchema.findOne({_id});
-        res.status(200).send({username:user.username})  
+        res.status(200).send({username:user.username,profile:user.profile})  
     }catch(error){
         res.status(400).send({error})
     }
@@ -89,4 +86,3 @@ export async function emailverification(req,res){
         }
         
 }
-
