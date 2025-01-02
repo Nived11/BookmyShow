@@ -1,5 +1,6 @@
 import movieSchema from "../models/movie.model.js";
 // import {fileURLToPath} from "url";
+
 export async function addMovie(req, res) {
     const { name,rating,screen,language,duration,certified,genres ,moviespic} = req.body;
     // console.log(name,rating,screen,language,duration,certified,genres,moviespic);
@@ -11,14 +12,12 @@ export async function addMovie(req, res) {
 }
 
 
-// // export async function Home(req,res){
-// //     try{
-// //         console.log("end point");
 
-// //         console.log(req.movie);
-// //         const movie=await movieSchema.findOne({_id});
-// //         res.status(200).send({username:user.username})  
-// //     }catch(error){
-// //         res.status(400).send({error})
-// //     }
-// // }
+export async function getMovies(req, res) {
+    try {
+        const movies = await movieSchema.find();
+        res.status(200).send(movies);
+    } catch (error) {
+        res.status(400).send({ error });
+    }
+}

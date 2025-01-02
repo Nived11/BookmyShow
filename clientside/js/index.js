@@ -29,3 +29,37 @@ async function getHome(){
 }
 getHome()
 
+async function getMovies(){
+    try {
+        const res = await fetch(API + "/api/getmovies");
+        if (res.status !== 200) {
+            throw new Error("Failed to get movies");
+        }
+        const movies = await res.json();
+        console.log(movies);
+        
+        let str = "";
+        movies.forEach((movie) => {
+            // console.log(movie._id);
+            
+            str += `
+            <a href="../pages/movie.html?id=${movie._id}">
+            <div class="card" id="card">
+                <div class="movie">
+                    <img src="${movie.moviespic[0]}" alt="${movie.name}">
+                </div>
+                <div class="moviename">
+                    <h3>${movie.name}</h3>
+                    <h5>${movie.genres}</h5>
+                </div>
+            </div>
+            </a>
+            `;
+        });
+        document.getElementById("card").innerHTML = str;
+    } catch (error) {
+        console.error(error);
+    }
+}
+getMovies();
+

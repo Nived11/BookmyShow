@@ -9,7 +9,6 @@ router.route("/login").post(rh.loginUser);
 router.route("/home").get(Auth,rh.Home);
 router.route("/emailverification").post(rh.emailverification);
 router.route("/addmovie").post(mv.addMovie);
-
-
+router.route("/getmovies").get(mv.getMovies);
 
 export default router;

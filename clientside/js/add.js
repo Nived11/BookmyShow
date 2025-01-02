@@ -39,29 +39,29 @@ document.addEventListener("DOMContentLoaded", () => {
         
         console.log(name,rating,screen,language,duration,certified,genres,moviespic);
         
-        // try {
+        try {
             
-        //     const res = await fetch (API+"/addmovie",{
-        //         method:"POST",
-        //         headers:{"Content-Type":"application/json"},
-        //         body:JSON.stringify({name,rating,screen,language,duration,certified,genres})
-        //     })
-        //     if(res.status==200){
-        //         const {msg}=await res.json();
-        //         alert(msg);
+            const res = await fetch (API+"/addmovie",{
+                method:"POST",
+                headers:{"Content-Type":"application/json"},
+                body:JSON.stringify({name,rating,screen,language,duration,certified,genres,moviespic})
+            })
+            if(res.status==200){
+                const {msg}=await res.json();
+                alert(msg);
                 
                 
                 
-        //         window.location.href="../index.html"
-        //     }else{
-        //         alert("not added")
-        //     }
+                window.location.href="../index.html"
+            }else{
+                alert("not added")
+            }
     
             
-        // } catch (error) {
-        //     console.log(error);
+        } catch (error) {
+            console.log(error);
             
-        // }
+        }
 
         
         
