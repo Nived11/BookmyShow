@@ -1,14 +1,14 @@
-// import movieSchema from "../models/movie.model.js";
+import movieSchema from "../models/movie.model.js";
 // import {fileURLToPath} from "url";
-// export async function addMovie(req, res) {
-//     const { name,rating,screen,language,duration,certified,genres } = req.body;
-//     console.log(name,rating,screen,language,duration,certified,genres);
-//     await movieSchema.create({name,rating,screen,language,duration,certified,genres}).then(()=>{
-//         res.status(200).send({msg:"successfully created"})
-//     }).catch((error)=>{
-//         res.status(500).send({error})
-//     })
-// }
+export async function addMovie(req, res) {
+    const { name,rating,screen,language,duration,certified,genres ,moviespic} = req.body;
+    // console.log(name,rating,screen,language,duration,certified,genres,moviespic);
+    await movieSchema.create({name,rating,screen,language,duration,certified,genres,moviespic}).then(()=>{
+        res.status(200).send({msg:"successfully created"})
+    }).catch((error)=>{
+        res.status(500).send({error})
+    })
+}
 
 
 // // export async function Home(req,res){
