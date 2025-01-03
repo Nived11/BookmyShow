@@ -29,6 +29,7 @@ async function getHome(){
 }
 getHome()
 
+
 async function getMovies(){
     try {
         const res = await fetch(API + "/api/getmovies");

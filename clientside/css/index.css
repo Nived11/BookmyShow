@@ -60,12 +60,12 @@ input::placeholder{
     display: flex;
 }
 .place-div{
-width: 50%;
-height: 100%;
-/* background-color: brown; */
-display: flex;
-align-items: center;
-justify-content: end;
+    width: 50%;
+    height: 100%;
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }
 
 .place{
@@ -127,7 +127,7 @@ button{
 
 }
 .moreicon{
-    height: 40px;
+    height: 30px;
     cursor: pointer;
 }
 .secnav{

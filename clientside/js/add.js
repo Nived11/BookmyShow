@@ -11,12 +11,11 @@ document.getElementById("moviespic").addEventListener('change',async(e)=>{
     console.log(moviespic);
     document.getElementById("imag1").src=moviespic[0];
     document.getElementById("imag2").src=moviespic[1];
-    document.getElementById("imag3").src=moviespic[2];
-    document.getElementById("imag4").src=moviespic[3];
-
-
+    // document.getElementById("imag3").src=moviespic[2];
+    // document.getElementById("imag4").src=moviespic[3];
 
 })
+
 
 document.addEventListener("DOMContentLoaded", () => {
   
@@ -49,24 +48,19 @@ document.addEventListener("DOMContentLoaded", () => {
             if(res.status==200){
                 const {msg}=await res.json();
                 alert(msg);
-                
-                
-                
                 window.location.href="../index.html"
             }else{
                 alert("not added")
             }
-    
-            
+
         } catch (error) {
             console.log(error);
             
         }
-
-        
         
     });
 });
+
 
 
 function convertBase64(file){
