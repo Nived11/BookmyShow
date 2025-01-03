@@ -11,5 +11,6 @@ router.route("/emailverification").post(rh.emailverification);
 router.route("/addmovie").post(mv.addMovie);
 router.route("/getmovies").get(mv.getMovies);
 router.route("/getsecmovie/:_id").get(mv.getSecMovie);
+router.route("/deletemovie/:_id").delete(mv.deleteMovies);
 
 export default router;

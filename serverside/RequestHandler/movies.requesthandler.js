@@ -33,3 +33,15 @@ export async function getSecMovie(req, res) {
         res.status(400).send({ error });
     }
 }
+
+export async function deleteMovies(req, res) {
+    const {_id } = req.params;
+        await movieSchema.deleteOne({_id})
+        .then(()=>{
+            res.status(200).send({msg:"successfully deleted"})
+        }).catch((error)=>{
+            res.status(500).send({error})
+        })
+        
+   
+}
