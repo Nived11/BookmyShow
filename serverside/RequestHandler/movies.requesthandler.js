@@ -21,3 +21,15 @@ export async function getMovies(req, res) {
         res.status(400).send({ error });
     }
 }
+
+export async function getSecMovie(req, res) {
+    const {_id } = req.params;
+    try {
+        const data = await movieSchema.findById(_id);
+        // console.log(data);
+        
+        res.status(200).send(data);
+    } catch (error) {
+        res.status(400).send({ error });
+    }
+}
